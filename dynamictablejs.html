@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- creating dynamic table and applying sorting,paging and filtering-->
+  <html>
+    <head>
+      <title> dynamic table with javascript </title>
+      <!-- adding script and style files -->
+      <script type="text/javascript" src="dtspfjs.js"></script>
+      <link rel="stylesheet" type="text/css" href="dynamictjs.css">
+    </head>
+    <body>
+      <div id="dynamictable">
+        <button type="button" id="create" onclick="addTable()"> create table </button>
+        <br>
+        <br>
+      </div>
+      <div id="datatable">
+        <!-- adding data to dynamic table-->
+        <br>
+        <label id="empnol">Emp No:</label>
+        <input type="text" id="empno">
+        <br>
+        <label id="empnamel">Emp Name:</label>
+        <input type="text" id="empname">
+        <br>
+        <label id="salaryl"> Salary:</label>
+        <input type="text" id="salary">
+        <br>
+        <label id="contactnol">Contact No:</label>
+        <input type="text" id="contactno">
+        <br>
+        <label id="addressl">Address:</label>
+        <input type="text" id="address">
+        <br>
+        <br>
+        <button type="button" id="add" onclick="addData()"> add data </button>
+        <br>
+        <br>
+        <!-- sorting table -->
+        <table id="dattable">
+          <tr>
+            <th onclick="sort()"> Emp id</th>
+            <th onclick="sort()">Emp Name</th>
+            <th onclick="sort()">salary</th>
+            <th onclick="sort()">contact No</th>
+            <th onclick="sort()">Address</th>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>sri</td>
+            <td>15000</td>
+            <td>079949332343</td>
+            <td>grrtef</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>shi</td>
+            <td>25000</td>
+            <td>9876774363</td>
+            <td>tegd</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <!--deleting a row in table-->
+        <label id="deleterowl">Enter which row want to delate</label>
+        <input type="text" id="deleterow">
+        <br>
+        <button type="button" id="deleterowbtn" onclick="deleteRowr()"> Delete Row </button>
+        <br>
+        <br>
+      </div>
+    </body>
+  </html>

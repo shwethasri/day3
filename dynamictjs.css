@@ -1,0 +1,16 @@
+/* stylesheet for creating dynamic table*/
+div{
+      align-items: center;
+      background-color: #fff5ff;
+      margin: 0 auto;
+      height: 50%;
+      width: 40%;
+   }
+label{
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+     }
+table{
+        border:1 auto;
+      }
